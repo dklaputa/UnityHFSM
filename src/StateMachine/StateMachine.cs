@@ -84,6 +84,7 @@ namespace FSM
 				return activeState;
 			}
 		}
+		IState IStateMachine.ActiveState => ActiveState;
 		public TStateId ActiveStateName => ActiveState.name;
 
 		private bool IsRootFsm => fsm == null;
